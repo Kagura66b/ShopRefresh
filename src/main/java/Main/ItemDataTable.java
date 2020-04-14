@@ -30,7 +30,6 @@ public class ItemDataTable {
             for (int i = 0; i < row.size(); i++) {
                 rowArray[i] = row.get(i).replaceAll("a446", "\n").replaceAll("a445", ",");
             }
-            // (String[])row.toArray();
             newRecords.add(rowArray);
         }
         for(String[] entry: newRecords){
@@ -41,23 +40,6 @@ public class ItemDataTable {
             }
         }
         System.out.println("\n" + newRecords.size() + " records scanned");
-        /*
-        records = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(path), StandardCharsets.UTF_8))) {
-            String line;
-            while ((line = br.readLine()) != null){
-                String[] values  = line.split(",");
-                if(values.length!=15){System.out.println("ALERT");}
-                for (int i = 0; i < values.length; i++) {
-                    values[i] = values[i].replaceAll("a446", "\n");
-                    values[i] = values[i].replaceAll("a445", ",");
-                }
-                records.add(values);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        */
     }
 
     public void rebuildDataTable(MessageReceivedEvent event){

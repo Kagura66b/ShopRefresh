@@ -11,8 +11,8 @@ import java.io.IOException;
 
 public class Main{
 
-    static final String tokenSource = "/home/ubuntu/token";
-    //static final String tokenSource = "F:\\testToken";
+    //static final String tokenSource = "/home/ubuntu/token";
+    static final String tokenSource = "F:\\token";
     public static JDA jda;
 
     public static void main(String[] args) throws LoginException, IOException, InterruptedException {
@@ -26,7 +26,6 @@ public class Main{
         jda = builder.build();
         jda.awaitReady();
         ShopRefresh refresh = new ShopRefresh(jda, dataTable);
-        refresh.refreshShop();
-
+        refresh.refreshShop(jda);
     }
 }
