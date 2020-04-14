@@ -50,23 +50,23 @@ public class ShopRefresh {
 
 
         StringBuilder builder = new StringBuilder();
-        builder.append(uncommons.get(0).name + " for " + uncommons.get(0).getPrice() + " gold");
+        builder.append("1: " + uncommons.get(0).name + " for " + uncommons.get(0).getPrice() + " gold");
         builder.append("\n");
-        builder.append(uncommons.get(1).name + " for " + uncommons.get(1).getPrice() + " gold");
+        builder.append("2: " + uncommons.get(1).name + " for " + uncommons.get(1).getPrice() + " gold");
         builder.append("\n");
-        builder.append(uncommons.get(2).name + " for " + uncommons.get(2).getPrice() + " gold");
+        builder.append("3: " + uncommons.get(2).name + " for " + uncommons.get(2).getPrice() + " gold");
         builder.append("\n");
-        builder.append(uncommons.get(3).name + " for " + uncommons.get(3).getPrice() + " gold");
+        builder.append("4: " + uncommons.get(3).name + " for " + uncommons.get(3).getPrice() + " gold");
         builder.append("\n");
-        builder.append(uncommons.get(4).name + " for " + uncommons.get(4).getPrice() + " gold");
+        builder.append("5: " + uncommons.get(4).name + " for " + uncommons.get(4).getPrice() + " gold");
         builder.append("\n");
-        builder.append(rares.get(0).name + " for " + rares.get(0).getPrice() + " gold");
+        builder.append("6: " + rares.get(0).name + " for " + rares.get(0).getPrice() + " gold");
         builder.append("\n");
-        builder.append(rares.get(1).name + " for " + rares.get(1).getPrice() + " gold");
+        builder.append("7: " + rares.get(1).name + " for " + rares.get(1).getPrice() + " gold");
         builder.append("\n");
-        builder.append(rares.get(2).name + " for " + rares.get(2).getPrice() + " gold");
+        builder.append("8: " + rares.get(2).name + " for " + rares.get(2).getPrice() + " gold");
         builder.append("\n");
-        builder.append(veryRare.name + " for " + veryRare.getPrice() + " gold");
+        builder.append("9: " + veryRare.name + " for " + veryRare.getPrice() + " gold");
 
         List<Message> messages = jda.getTextChannelById("699670958344110200").getHistory().getRetrievedHistory();
 
